@@ -15,7 +15,7 @@ pipeline{
         }
         stage("Test"){
             steps{
-                echo "code Test"
+                echo "code Test test"
                 sh" docker rm -f Devops_practice || true"
             }
         }
