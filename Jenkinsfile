@@ -16,12 +16,13 @@ pipeline{
         stage("Test"){
             steps{
                 echo "code Test"
+                sh" docker rm -f devops || true"
             }
         }
         stage("Deploy"){
             steps{
                 echo "code Deploy"
-                sh" docker rm -f devops || true"
+                
                 sh "docker run -d -p 8080:80 --name Devops_practice devopspractice:latest "
             }
         }
