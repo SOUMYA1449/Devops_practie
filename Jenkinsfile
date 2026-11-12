@@ -21,7 +21,7 @@ pipeline{
         }
         stage("Deploy"){
             steps{
-                echo "code Deploy"
+                echo "code Deploy web"
                 
                 sh "docker run -d -p 8080:80 --name Devops_practice devopspractice:latest "
             }
