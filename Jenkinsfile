@@ -16,7 +16,7 @@ pipeline{
         stage("Test"){
             steps{
                 echo "code Test"
-                sh" docker rm -f devops || true"
+                sh" docker rm -f Devops_practice || true"
             }
         }
         stage("Deploy"){
