@@ -4,8 +4,8 @@ pipeline{
     stages{
         stage("code"){
             steps{
-                //git url:"https://github.com/SOUMYA1449/Devops_practie.git", branch:"main"
-                git url:"https://github.com/LondheShubham153/django-notes-app.git", branch:"main"
+                git url:"https://github.com/SOUMYA1449/Devops_practie.git", branch:"main"
+                //git url:"https://github.com/LondheShubham153/django-notes-app.git", branch:"main"
             }
         }
         stage("build"){
