@@ -4,7 +4,7 @@ pipeline{
     
     stages{
         stage("code"){
-            // steps{
+             steps{
             //     script{
             //         clone("https://github.com/SOUMYA1449/Devops_practie.git","main")
             //     }
