@@ -3,12 +3,7 @@ pipeline{
     agent {label "Demo"}
     
     stages{
-        stage("hello"){
-            steps{
-            script{
-                hello()
-            }
-        }
+        
         stage("code"){
              steps{
                  script{
