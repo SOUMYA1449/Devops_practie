@@ -3,10 +3,16 @@ pipeline{
     agent {label "Demo"}
     
     stages{
+        stage("hello"){
+            steps{
+            script{
+                hello()
+            }
+        }
         stage("code"){
              steps{
                  script{
-                     clone("https://github.com/SOUMYA1449/Devops_practie.git","main")
+                     Clone("https://github.com/SOUMYA1449/Devops_practie.git","main")
                  }
                 //git url:"https://github.com/SOUMYA1449/Devops_practie.git", branch:"main"
                 //git url:"https://github.com/LondheShubham153/django-notes-app.git", branch:"main"
